@@ -1,7 +1,9 @@
 import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
-import { DirectMessage, Message } from "@prisma/client";
+import { DirectMessage } from "@prisma/client";
 import { NextRequest, NextResponse } from "next/server";
+
+export const dynamic = 'force-dynamic'; // Force dynamic rendering
 
 const MESSAGES_BATCH = 10;
 

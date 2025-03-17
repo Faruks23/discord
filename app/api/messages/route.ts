@@ -3,6 +3,7 @@ import { db } from "@/lib/db";
 import { Message } from "@prisma/client";
 import { NextRequest, NextResponse } from "next/server";
 
+export const dynamic = 'force-dynamic'; // Force dynamic rendering
 const MESSAGES_BATCH = 10;
 
 export const GET = async (req: NextRequest) => {
